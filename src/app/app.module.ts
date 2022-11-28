@@ -8,6 +8,8 @@ import { DemoBindingComponent } from './demo-binding/demo-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
 import { ToTemperaturePipe } from './pipes/to-temperature.pipe';
+import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
+import { DemoDirectivesStructuralComponent } from './demo-directives-structural/demo-directives-structural.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ToTemperaturePipe } from './pipes/to-temperature.pipe';
     HelloWorldComponent,
     DemoBindingComponent,
     DemoPipesComponent,
-    ToTemperaturePipe
+    ToTemperaturePipe,
+    DemoDirectivesComponent,
+    DemoDirectivesStructuralComponent
   ],
   imports: [
     BrowserModule,
