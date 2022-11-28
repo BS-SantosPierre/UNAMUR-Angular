@@ -4,15 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { DemoBindingComponent } from './demo-binding/demo-binding.component';
+import { FormsModule } from '@angular/forms';
+import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
+import { ToTemperaturePipe } from './pipes/to-temperature.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent
+    HelloWorldComponent,
+    DemoBindingComponent,
+    DemoPipesComponent,
+    ToTemperaturePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+		FormsModule
   ],
   providers: [],
 	exports: [],
