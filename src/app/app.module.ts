@@ -10,6 +10,11 @@ import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
 import { ToTemperaturePipe } from './pipes/to-temperature.pipe';
 import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
 import { DemoDirectivesStructuralComponent } from './demo-directives-structural/demo-directives-structural.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { ExoSpoilerComponent } from './exo-spoiler/exo-spoiler.component';
+import { ExoMenuComponent } from './exo-menu/exo-menu.component';
+import { LinkComponent } from './exo-menu/link/link.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { DemoDirectivesStructuralComponent } from './demo-directives-structural/
     DemoPipesComponent,
     ToTemperaturePipe,
     DemoDirectivesComponent,
-    DemoDirectivesStructuralComponent
+    DemoDirectivesStructuralComponent,
+    AccordionComponent,
+    ExoSpoilerComponent,
+    ExoMenuComponent,
+    LinkComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
