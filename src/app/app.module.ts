@@ -15,6 +15,8 @@ import { ExoSpoilerComponent } from './exo-spoiler/exo-spoiler.component';
 import { ExoMenuComponent } from './exo-menu/exo-menu.component';
 import { LinkComponent } from './exo-menu/link/link.component';
 import { LoginComponent } from './login/login.component';
+import { ExoShoppingListComponent } from './exo-shopping-list/exo-shopping-list.component';
+import { ShoppingItemComponent } from './exo-shopping-list/shopping-item/shopping-item.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { LoginComponent } from './login/login.component';
     ExoSpoilerComponent,
     ExoMenuComponent,
     LinkComponent,
-    LoginComponent
+    LoginComponent,
+    ExoShoppingListComponent,
+    ShoppingItemComponent
   ],
   imports: [
     BrowserModule,
