@@ -13,4 +13,19 @@ describe('LoginService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+	it('user login success', () => {
+		service.connect('psantos', '1234');
+		expect(service.connectedUser).toBeDefined();
+	});
+
+	it('user login not success', () => {
+		service.connect('psantos', '2323242');
+		expect(service.connectedUser).toBeUndefined();
+	});
+
+	it('user logout', () => {
+		service.disconnect();
+		expect(service.connectedUser).toBeUndefined();
+	});
 });
